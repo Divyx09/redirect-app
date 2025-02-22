@@ -1,20 +1,16 @@
-import UrlInput from "@/components/UrlInput";
+import BulkUrlInput from "@/components/BulkUrlInput";
 
-export default async function Home() {
+export default async function BulkChecker() {
   return (
     <div className='row mx-0 justify-content-center'>
       <div className='col-8 my-5'>
         <h1 className='text-white fw-bold text-center'>
-          Check Your Redirects and Statuscode
+          Bulk Redirect Checker Tool
         </h1>
         <h3 className='text-white fw-bold text-center'>
-          301 vs 302, meta refresh & JavaScript redirects
+          Check Bulk HTTP Header Response & Redirect Chains for Multiple URLs
         </h3>
-        <UrlInput />
-        <p className='text-white fw-bold'>
-          Add http:// or https:// on your URL.
-        </p>
-
+        <BulkUrlInput />
         <h5 className='text-white fw-bold'>Redirect Checker Options:</h5>
         <p className='text-white fw-bold'>
           You want to check your redirect with a specific user-agent. Just
@@ -30,13 +26,6 @@ export default async function Home() {
             <option>Safari</option>
           </select>
         </div>
-
-        <p className='text-white fw-bold'>
-          Check your URL redirect for accuracy. Do you use search engine
-          friendly redirections like too many redirects, or do you lose link
-          juice for SEO by redirects using HTTP Statuscode 301 vs. 302? Check
-          now!
-        </p>
       </div>
     </div>
   );
